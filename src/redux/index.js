@@ -28,3 +28,7 @@ function carReducer(state={initialState}, action){
             return state;
     }
 }
+
+const store = createStore(carReducer); //sets up store
+store.subscribe(() => console.log(store.getState() )) //basically gives us the state of the store when any changes occurs
+export default store; //exports store (so we can use it in the provider in src/index.js)
