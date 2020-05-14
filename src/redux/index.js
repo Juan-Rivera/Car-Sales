@@ -21,7 +21,7 @@ const initialState = {
 }
 
 //REDUCER
-function carReducer(state={initialState}, action){
+function carReducer(state=initialState, action){
     switch(action.type){
     
         default:
